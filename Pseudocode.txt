@@ -1,0 +1,34 @@
+
+/*
+   	Nicolás Queijo
+	Assignment 6
+	PID: 5152398
+   	COP3337 - U04
+     T/R 2:00 PM - 3:15 PM
+     William Feild
+	I hereby certify that this collective work is my own 
+	and none of it is the work of any other person or entity. 
+ */
+
+PSEUDOCODE:
+
+- Execute the tester class in the terminal using two command line arguments to denote the input and output files.
+	If exactly two arguments were not given, halt the program and print an error message to the console.
+- Find the input file in the project directory and open it.
+	If a file by the name of the first argument passed in the command line does not exist, halt the program and print an error message to the console.
+- Open the file and parse its content.
+	If the file has no content whatsoever, halt the program and print an error message to the console.
+- Peek at the first element in the file for an integer.
+	If it is not an integer (e.g. if it is a double, String, etc.), halt the program and print an error message to the console.
+- Analyse the integer found in the file for its value.
+	If the value is either under 1 or over 49, halt the program and print an error message to the console.
+- Close the input file.
+- Open another file with the name of the second argument in the command line to be used for output.
+- Take that number found in the input file and use it as the 'n' to find a series of Fibonacci numbers.
+- Using a recursive method compute the first 'n' Fibonacci numbers and print them to the output file in a table.
+- Record the execution time of the aforementioned step and print it to the output file after the table.
+- Using an iterative method compute the first 'n' Fibonacci numbers and print them to the output file in a table.
+- Record the execution time of the aforementioned step and print it to the output file after the table.
+- Using a fast recursive method compute the first 'n' Fibonacci numbers and print them to the output file in a table.
+- Record the execution time of the aforementioned step and print it to the output file after the table.
+- Close the output file.
